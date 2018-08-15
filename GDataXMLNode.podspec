@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GDataXMLNode"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "GDataXMLNode"
   s.description  = <<-DESC
                     GDataXMLNode
@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Classes' do |classes|
     classes.ios.source_files = 'Source/XMLSupport/*.{h,m}'
+    classes.requires_arc = false
   end
 
   s.library = 'xml2'
